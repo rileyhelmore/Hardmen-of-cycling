@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function bigImg(x) {
+  x.style.height = "800px";
+  x.style.width = "800px";
+}
+
+function normalImg(x) {
+  x.style.height = "300px";
+  x.style.width = "300px";
+}
+
+function img_size(x)
+{
+  x.style.height = "300px";
+  x.style.width = "300px";
+}
+
+
+</script>
+<!-- specify that the linked docment is a stylesheet -->
+<link rel="stylesheet" href="./index_style.css" type="text/css">
+</head>
+<body>
+  <h1 class="h1">Hardmen of cycling</h1>
+  <h2 class="h2">A view into the legends of the hardest, most beatiful sport on earth</h2>
+  <ul class="ul">
+    <li class="li"><a href="riders/riders.php">Riders</a></li>
+    <li class="li"><a href="./stories.php">Stories</a></li>
+    <li class="li"><a href="./events.php">Events</a></li>
+    <li class="li"><a href="./TDF.php">TDF</a></li>
+  </ul>
+  <h3>Featured riders</h3>
+  <img onload="img_size(this)" onmouseout="normalImg(this)" onmouseover="bigImg(this)"  src="eddy_homepage.png">
+  <p>Eddy Merckx, aka the Cannibal</p>
+  <br><br><br>
+  <img onload="img_size(this)" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="jens_voigt.jpg">
+  <p>Jens Voigt. A suffering specialist. "Shut up legs!"</p>
+  <br><br><br>
+  <img onload="img_size(this)" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="hinault_images.jpg">
+  <p>Bernard Hinault, known as "The Badger"</p>
+  <br><br><br>
+  <div class="featured_other">
+  <h3>Featured other</h3>
+</div>
+</body>
+</html>
